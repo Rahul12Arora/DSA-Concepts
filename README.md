@@ -120,4 +120,19 @@ class Solution {
 // 10,15,20,12,8,10
 // 10 + 52
 // 10 + 40
+
+//Approach 2 = Tabulation
+
+public int minCostClimbingStairs(int[] cost){
+        int n = cost.length;
+        int[] memo = new int[n+1];
+        memo[0]=cost[0];
+        memo[1]=cost[1];
+        for(int i=2;i<n;i++)
+        {
+            memo[i]=cost[i]+ Math.min(memo[i-1],memo[i-2]);
+        }
+        return Math.min(memo[n-1], memo[n-2]);
+    }
+
 ```
