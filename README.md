@@ -7,6 +7,7 @@ DSA Concepts
 ```
 EX-1 https://leetcode.com/problems/climbing-stairs/submissions/
 
+//Approach 1 => TOP DOWN APPROACH
 class Solution {
     public int climbStairs(int n) {
         if(n<2) return n;
@@ -33,4 +34,33 @@ class Solution {
 //     _2=>1+1
 //      _1=>1
 //       _0
+
+//Approach 2 => Tabular memoization
+
+public int climbStairs(int n) {
+        if(n<2) return n;
+        int[] memo = new int[n];
+        memo[0]=1;
+        memo[1]=2;
+
+        for(int i=2;i<n;i++){
+            memo[i]=memo[i-1]+memo[i-2];
+        }
+        return memo[n-1];
+    }
+
+//APPROACH 3=> Bottom up variable
+
+public int climbStairs(int n) {
+        if(n<3) return n;
+        int a = 1;
+        int b = 2;
+
+        for(int i=3;i<n+1;i++){
+            int temp = b;
+            b=a+b;
+            a=temp;
+        }
+        return b;
+    }
 ```
