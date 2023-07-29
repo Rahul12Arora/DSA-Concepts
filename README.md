@@ -135,4 +135,20 @@ public int minCostClimbingStairs(int[] cost){
         return Math.min(memo[n-1], memo[n-2]);
     }
 
+//Approach 3 => Non tabular dp
+
+public int minCostClimbingStairs(int[] cost){
+int n = cost.length;
+        int a =cost[0];
+        int b =cost[1];
+        int curr=0;
+        for(int i=2;i<n;i++)
+        {
+            curr=cost[i]+ Math.min(a,b);
+            int temp = b;
+            b=curr;
+            a=temp;
+        }
+        return Math.min(a,b);
+}
 ```
