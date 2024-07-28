@@ -410,7 +410,8 @@ listOfStudents.sort(ageComparator); //sort takes a comparator in it's argument; 
 Class Student{
 
 
-    @override toString(){
+    @override 
+    public String toString(){
 	return this.name + "has age " + this.age
     }
 }
