@@ -157,6 +157,9 @@ int n = cost.length;
 
 <li><h2>Comparator & Comparable in Java</h2></li>
 
+**return a-b; This tells us the ordering between a & b, it is positive if a is greater than b, meaning b comes before a, if it's negative it means that a comes before b.**
+
+
 <h3>Differences between the 2 Classes</h3>
 
 In Java, both the `Comparable` and `Comparator` interfaces are used to define the natural ordering of objects, but they serve different purposes and are used in different contexts. Here's a detailed comparison:
