@@ -155,7 +155,7 @@ int n = cost.length;
 }
 ```
 
-<li><h2>Comparator & Comparable in Java</h2></li>li>
+<li><h2>Comparator & Comparable in Java</h2></li>
 
 <h3>Differences between the 2 Classes</h3>
 
