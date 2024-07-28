@@ -3,7 +3,7 @@ DSA Concepts
 
 <ol>
 
-<li><h2>DP - Dynamic Programming</h2></li>li>
+<li><h2>DP - Dynamic Programming</h2></li>
 
 
 ```
