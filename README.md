@@ -395,4 +395,25 @@ class GFG {
 }
 ```
 
+<h3>Comparator in java 8</h3>
+
+```
+Comparator<Student> ageComparator = Comparator.compare(s -> s.age);
+
+listOfStudents.sort(ageComparator); //sort takes a comparator in it's argument; this does the same job as creating another class of comparator & then implement that here
+
+```
+
+**We can also override other default methods like toString()**
+
+```
+Class Student{
+
+
+    @override toString(){
+	return this.name + "has age " + this.age
+    }
+}
+```
+
 </ol>
